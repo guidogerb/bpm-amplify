@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "bpmamplify2f97bbbd": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
