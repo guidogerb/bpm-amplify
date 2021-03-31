@@ -1,0 +1,5 @@
+{
+    "tableName": "bpmitems",
+    "partitionKeyName": "name",
+    "partitionKeyType": "S"
+}

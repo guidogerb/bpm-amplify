@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/item/{name}",
+            "lambdaFunction": "mylambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/item/*"
+        }
+    ],
+    "resourceName": "bpmrestapi",
+    "apiName": "bpmrestapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "mylambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify7c6e03783ce94-staging-195542-authRole",
+        "unAuthRoleName": "amplify-amplify7c6e03783ce94-staging-195542-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mylambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
